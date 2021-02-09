@@ -1,0 +1,59 @@
+body{
+    background-color: darkgrey;
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    background-color: darksalmon;
+    min-height:10vh;
+    text-align: center;
+    color: white;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+header > h1{
+    font-size: 5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+main{
+    padding: 0px;
+}
+#Comidas{
+    background-color: rgb(145, 141, 141);
+    padding: 3% ;
+}
+#Españolas{
+    font-size: 1.5em;
+}
+#Españolas > figcaption {
+    font-size: 1em;
+}
+#Colombianas{
+    font-size: 1.5em;
+}
+#img-1{
+    margin: 0px;
+    text-align: center;
+}
+#img-1 > img {
+    width: 50vw;
+    height: 60vh;
+}
+#img-2 > img {
+    width: 30vw;
+    height: 60vh;
+}
+#img-3 > img {
+    width: 40vw;
+    height: 40vh;
+}
+footer{
+    background-color: rgb(219, 129, 99);
+    min-height:6vh;
+    text-align: center;
+}
+footer> address > a {
+    font-size: 2em;
+    color: white;
+}
