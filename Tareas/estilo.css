@@ -1,0 +1,223 @@
+body {
+    background-color: #FFDFE8;
+}
+
+header {
+    background-image: url("marmol.jpg");
+    text-align: center;
+    min-height:10vh;
+}
+
+header > h1{
+    color: #383838;
+    font-family: 'Pacifico', cursive;
+    font-size: 4.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+main {
+    padding: 0px;
+}
+
+#introduccion{
+    text-align: center;
+}
+#introduccion > h2{
+    color: #303030;
+    background-color: #FEC8D8 ;
+    font-size: 2em;
+    font-family: 'Dosis', sans-serif;
+}
+
+#reposteria {
+    text-align: center;
+}
+
+#reposteria > h2 {
+    color: #303030;
+    background-image: url("marmol.jpg");
+    font-size: 3em;
+    font-family: 'Parisienne', cursive;
+}
+
+#reposteria > h3 {
+    color: #303030;
+    background-color: #CAE7F6 ;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: 'Dosis', sans-serif;
+}
+
+#animales {
+    text-align: center;
+}
+
+#animales > h2 {
+    color: #303030;
+    background-image: url("marmol.jpg");
+    font-size: 3em;
+    font-family: 'Parisienne', cursive;
+}
+
+#animales > h3 {
+    color: #303030;
+    background-color: #CAE7F6 ;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: 'Dosis', sans-serif;
+}
+
+#astrofilo {
+    text-align: center;
+}
+
+#astrofilo > h2 {
+    color: #303030;
+    background-image: url("marmol.jpg");
+    font-size: 3em;
+    font-family: 'Parisienne', cursive;
+}
+
+#astrofilo > h3 {
+    color: #303030;
+    background-color: #CAE7F6 ;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: 'Dosis', sans-serif;
+}
+
+#trabajo {
+    text-align: center;
+}
+
+#trabajo > h2 {
+    color: #303030;
+    background-image: url("marmol.jpg");
+    font-size: 3em;
+    font-family: 'Parisienne', cursive;
+}
+
+#trabajo > h3 {
+    color: #303030;
+    background-color: #CAE7F6;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: 'Dosis', sans-serif;
+}
+
+#musica {
+    text-align: center;
+}
+
+#musica > h2 {
+    color: #303030;
+    background-image: url("marmol.jpg");
+    font-size: 3em;
+    font-family: 'Parisienne', cursive;
+}
+
+#musica > h3 {
+    color: #303030;
+    background-color: #CAE7F6 ;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: 'Dosis', sans-serif;
+}
+
+#intro > img {
+    border-width: 15px;
+    border-style: solid;
+    border-color: #b3f5eb ;
+    width: 50vw;
+    height: 70vh;
+    transition: 0.5s;
+}
+
+#intro > img:hover {
+    width: 55vw;
+    height: 77vh;
+    transition: 0.5s;
+}
+
+#repo > img {
+    border-width: 20px;
+    border-style:double;
+    border-color: #C7CEEA  ;
+    width: 40vw;
+    height: 60vh;
+}
+
+#caballo > img {
+    float:left;
+    border-width: 20px;
+    border-style:double;
+    border-color: #FEC8D8 ;
+    margin-left: 200px;
+    width: 25vw;
+    height: 70vh;
+}
+
+#perro > img {
+    border-width: 20px;
+    border-style:double;
+    border-color: #C7CEEA  ;
+    width: 25vw;
+    height: 70vh;
+}
+
+#Astronomia > img {
+    float:left;
+    border-width: 20px;
+    border-style:double;
+    border-color: #FEC8D8 ;
+    margin-left: 150px;
+    width: 30vw;
+    height: 50vh;
+}
+
+#filosofia > img {
+    border-width: 20px;
+    border-style:double;
+    border-color: #C7CEEA  ;
+    width: 30vw;
+    height: 50vh;
+}
+
+#nj {
+    border-width: 20px;
+    border-style:double;
+    border-color: #FEC8D8 ;
+    width: 40vw;
+    height: 60vh;
+}
+
+#musica > img {
+    float:left;
+    border-width: 20px;
+    border-style:double;
+    border-color: #C7CEEA  ;
+    margin-left: 150px;
+    width: 30vw;
+    height: 50vh;
+}
+
+#baile > img {
+    border-width: 20px;
+    border-style:double;
+    border-color: #FEC8D8 ;
+    width: 30vw;
+    height: 50vh;
+}
+
+footer {
+    background-image: url("marmol.jpg");
+    min-height:10vh;
+    text-align: center;
+}
+
+footer> address > a {
+    font-size: 3em;
+    font-family: 'Sacramento', cursive;
+    color: #303030;
+}
