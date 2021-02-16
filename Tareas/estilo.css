@@ -23,6 +23,7 @@ main {
 #introduccion{
     text-align: center;
 }
+
 #introduccion > h2{
     color: #303030;
     background-color: #FEC8D8 ;

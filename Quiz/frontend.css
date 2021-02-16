@@ -1,0 +1,123 @@
+body {
+    background-color: #FADCE6;
+}
+
+header {
+    background-image: url("glitter.jpg");
+    text-align: center;
+    min-height:10vh;
+}
+
+header > h1{
+    color: #000001;
+    font-family: 'Pacifico', cursive;
+    font-size: 6em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+main {
+    padding: 0px;
+}
+
+#introduccion{
+    text-align: center;
+}
+
+#Bio {
+    text-align: center;
+}
+
+#Bio > h2 {
+    background-image: url("glitter.jpg");
+    font-size: 3em;
+    font-family: 'Parisienne', cursive;
+}
+
+#Bio > h3 {
+    margin: 62px;
+    text-align: justify;
+    color: #FF0080;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: 'Dosis', sans-serif;
+}
+
+#First > a {
+    font-size: 2em;
+    font-family: 'Sacramento', cursive;
+    color: #FF0080;
+}
+
+#Second > a {
+    font-size: 2em;
+    font-family: 'Sacramento', cursive;
+    color: #FF0080;
+}
+
+#like {
+    text-align: center;
+}
+
+#like > h2 {
+    background-image: url("glitter.jpg");
+    font-size: 3em;
+    font-family: 'Parisienne', cursive;
+}
+
+#like > h3 {
+    margin: 62px;
+    text-align: justify;
+    color: #FF0080;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: 'Dosis', sans-serif;
+}
+
+#intro > img {
+    border-width: 15px;
+    border-style: solid;
+    border-color: #9B9B9B  ;
+    width: 50vw;
+    height: 60vh;
+    transition: 0.5s;
+}
+
+#intro > img:hover {
+    width: 55vw;
+    height: 65vh;
+    transition: 0.5s;
+}
+
+#ken > img {
+    border-width: 20px;
+    border-style:double;
+    border-color: #9B9B9B  ;
+    width: 30vw;
+    height: 70vh;
+    margin-bottom: 50px;
+}
+
+#juntas > img {
+    text-align: center;
+    border-width: 20px;
+    border-style:double;
+    border-color: #FEC8D8 ;
+    width: 40vw;
+    height: 60vh;
+    margin-bottom: 50px;
+}
+
+#final > img {
+    border-width: 20px;
+    border-style:double;
+    border-color: #9B9B9B ;
+    width: 30vw;
+    height: 70vh;
+}
+
+footer {
+    background-image: url("glitter.jpg");
+    text-align: center;
+    min-height:10vh;
+}
