@@ -1,0 +1,133 @@
+body {
+    background-color: #FADCE6;
+}
+
+header {
+    text-align: center;
+    min-height:10vh;
+}
+
+header > h1{
+    color: #000001;
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+main {
+    padding: 0px;
+}
+
+#introduccion{
+    text-align: center;
+}
+
+#Contexto {
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+#Contexto > h2 {
+    background-image: url("galaxi.jpg");
+    font-size: 3em;
+    font-family: 'Parisienne', cursive;
+}
+
+#Contexto > h3 {
+    margin: 62px;
+    text-align: center;
+    color: #014c6eee;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: 'Dosis', sans-serif;
+}
+
+#what {
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+#what > h2 {
+    background-image: url("galaxi.jpg");
+    font-size: 3em;
+    font-family: 'Parisienne', cursive;
+}
+
+#what > h3 {
+    margin: 62px;
+    text-align: justify;
+    color: #014c6eee;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: 'Dosis', sans-serif;
+}
+
+#noticia > a {
+    font-size: 2em;
+    font-family: 'Sacramento', cursive;
+    color: #014c6eee;
+}
+
+#twitter > a {
+    font-size: 3em;
+    font-family: 'Sacramento', cursive;
+    color: white;
+}
+
+
+#introduccion > h2 {
+    background-image: url("galaxi.jpg");
+    font-size: 3em;
+    font-family: 'Parisienne', cursive;
+}
+
+#introduccion > h3 {
+    margin: 62px;
+    text-align: justify;
+    color: #014c6eee;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: 'Dosis', sans-serif;
+}
+
+#intro > img {
+    border-width: 15px;
+    border-style: solid;
+    border-color: #9B9B9B  ;
+    width: 50vw;
+    height: 60vh;
+    transition: 0.5s;
+}
+
+#intro > img:hover {
+    width: 55vw;
+    height: 65vh;
+    transition: 0.5s;
+}
+
+#roca > img {
+    border-width: 20px;
+    border-style:double;
+    border-color: #9B9B9B  ;
+    width: 50vw;
+    height: 60vh;
+    margin-bottom: 50px;
+}
+
+#perseverance > img {
+    text-align: center;
+    border-width: 20px;
+    border-style:double;
+    border-color: #9B9B9B ;
+    width: 40vw;
+    height: 60vh;
+    margin-bottom: 50px;
+}
+
+
+footer {
+    background-image: url("galaxi.jpg");
+    text-align: center;
+    min-height: 60px vh;
+}
