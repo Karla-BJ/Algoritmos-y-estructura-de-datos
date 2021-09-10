@@ -1,0 +1,41 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt 
+import math 
+
+df = pd.read_csv('eeg.csv')
+print(df.head(5))
+
+eeg = df['Amplitude']
+fs = 50    #50 muestras en un segundo
+N = len(eeg) #Tamaño 800
+Tt = N/fs #Total time --> 16
+f1 = 1/Tt   #frecuencia natural --> 0,0625
+t = (np.arange(0,len(eeg))-1)/fs     #Vector de tiempos debe llegar hasta 16 (cambia cada 0,02 que es el período de muestreo= 1/50 que es Fs)                  
+
+# Inicializamos vectores para el resultado 
+f = np.zeros(round(N/2)) #Va a ser 400 --> la mitad
+X_mag = np.zeros(round(N/2)) #Definí el tamaño para luego en el for establecer los valores de c/posición
+X_phase = np.zeros(round(N/2)) 
+
+for m in range(1,round(N/2)):
+    f[m] = m*f1 
+    a = np.sum(eeg*(np.cos(2*np.pi*f[m]*t)))
+    b = np.sum(eeg*(np.sin(2*np.pi*f[m]*t)))
+    X_mag[m] = np.sqrt((a**2) + (b**2)) #Magnitud del espectro (C mayúscula en las diap. --> pitágoras)
+    X_phase[m] = -math.atan2(b,a) #Tangente inversa de b/a (Desfase)
+
+# Convert Phase to degrees
+X_phase = np.unwrap(X_phase) #Sacar múltiplos de 360 y desenvuelve
+X_phase = (X_phase*360)/(2*np.pi) #Radianes a grados 
+ax = plt.subplot(2,1,1)
+plt.plot(f,X_mag)              
+plt.xlabel('Frequency (Hz)',fontsize= 14)
+plt.ylabel('|X(m)|',fontsize= 14)
+ax = plt.subplot(2,1,2)
+plt.plot(f,X_phase)              
+plt.xlabel('Frequency (Hz)',fontsize= 14)
+plt.ylabel('Phase (deg)',fontsize= 14)
+plt.figure()
+plt.plot(eeg)
+plt.show()
