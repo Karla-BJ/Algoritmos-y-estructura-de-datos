@@ -26,7 +26,7 @@ for m in range(1,round(N/2)):
     X_phase[m] = -math.atan2(b,a) #Tangente inversa de b/a (Desfase)
 
 # Convert Phase to degrees
-X_phase = np.unwrap(X_phase) #Sacar múltiplos de 360 y desenvuelve
+X_phase = np.unwrap(X_phase) #Sacar múltiplos de 360 
 X_phase = (X_phase*360)/(2*np.pi) #Radianes a grados 
 ax = plt.subplot(2,1,1)
 plt.plot(f,X_mag)              

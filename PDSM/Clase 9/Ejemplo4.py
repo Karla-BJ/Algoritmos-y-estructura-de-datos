@@ -1,6 +1,8 @@
+#Análogo del ejemplo 2
 import numpy as np
 import matplotlib.pyplot as plt 
 import math 
+#Para hacer recontrucción con ifft, no puedo sacarle el valor absoluto --> Porque estaría eliminando la parte imaginaria (Todo estaría mal)
 
 fs = 500          
 Tt = 1            
@@ -17,9 +19,9 @@ plt.plot(t,sig)
 X = np.fft.fft(sig)
 #X = np.abs(X)
 
-# Reconstruction (ifft)
-aux_index = np.arange(5,N-4)
-X[aux_index] = 0 + 0j
+# Reconstruction (ifft) #Transformada de furier inversa
+aux_index = np.arange(5,N-4) #Del 0 al 4 no se apaga --> del 496 al 500 tampoco porque son espejo
+X[aux_index] = 0 + 0j #j es por imaginario, se apagan poniendolos en 0, ¿Cuáles de X debo apagar?
 sig_r = np.fft.ifft(X)
 sig_r = np.real(sig_r)
 
