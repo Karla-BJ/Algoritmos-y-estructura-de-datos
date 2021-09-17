@@ -18,6 +18,8 @@ plt.figure()
 plt.plot(f,X_mag2)
 plt.show()
 
+print('Segun la gráfica que observamos, la frecuencia del ruido es 60')
+
 '''#Punto B --> Profe, no sé que hice jajajaja
 aux= np.where (f>60)
 ind= aux[0][0]
