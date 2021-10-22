@@ -38,7 +38,7 @@ fz = []
 xz = []
 plt.figure()
 for posicion in range(len(f2)):
-    if f2[posicion]>0.66 and f2[posicion]<=3: 
+    if f2[posicion]>0.66 and f2[posicion]<=3:  
         fz.append(f2[posicion])
         xz.append(X_mag2[posicion])
 

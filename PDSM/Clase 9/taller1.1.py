@@ -26,17 +26,17 @@ plt.xlabel ("Tiempo (S)")
 plt.show ()
 
 # B
-desfase= np.arange (-y +1, y)
-corr = np.correlate(n1 - n1.mean(), n2 - n2.mean(), mode='full') #--> Se resta la media y compara todos los datos de la gráfica
+desfase= np.arange (-y +1, y) #Para tomar todos los valores
+corr = np.correlate(n1 - n1.mean(), n2 - n2.mean(), mode='full') #--> Se resta la media para normalizar la señal y compara todos los datos de la gráfica
 
 
-maxdes= desfase [np.argmax (corr)]
+maxdes= desfase [np.argmax (corr)] #-->Devuelve los valores máximos
 print (f"La correlación máxima entre N1 y N2, está en el desfase correspondiente a {maxdes}" )
 plt.show()
 
 plt.figure()
-plt.plot(n1[:maxdes],"b", label="N1") #De -65 hacia adelante
-plt.plot(n2[-maxdes:],"r", label="N2") #Hasta 65
+plt.plot(n1[:maxdes],"b", label="N1") #De -65 hacia adelante 
+plt.plot(n2[-maxdes:],"r", label="N2") #Hasta 65 hacia la
 plt.legend(loc='upper right', fontsize= 'small', ncol=2)
 plt.show()
 

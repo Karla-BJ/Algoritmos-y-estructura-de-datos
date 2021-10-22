@@ -15,7 +15,7 @@ lags = np.arange(-npts +1, npts) #Ver la gráfica desde el -4589 hasta 4589
 corr = np.correlate(patron-patron.mean(),ppg1-ppg1.mean(),mode ='full') 
 
 # la normalizamos con pearson
-corrP = corr / (npts * ppg1.std() * patron.std())
+corrP = corr / (npts * ppg1.std() * patron.std()) #--> Desviación estandar
 corrP_Max1= (max(corrP))
 print (f"La correlación máxima de pearson en PPG1 es correspondiente a {corrP_Max1}" )
 
